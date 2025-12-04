@@ -4,7 +4,6 @@ import TaskList from './components/TaskList'
 
 
 function App() {
-// carrega do localStorage
 const [tasks, setTasks] = useState(() => {
 try {
 const saved = localStorage.getItem('tasks')

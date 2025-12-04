@@ -1,13 +1,11 @@
 :root{
---bg-1: #0f172a; /* escuro */
+--bg-1: #0f172a;
 --card: #ffffff;
---accent: #4f46e5; /* paleta do aluno: roxo-azulado */
+--accent: #4f46e5;
 --accent-2: #06b6d4;
 --muted: #6b7280;
 }
 
-
-/* reset simples */
 *{box-sizing:border-box}
 html,body,#root{height:100%}
 body{
@@ -34,7 +32,6 @@ box-shadow:0 10px 30px rgba(2,6,23,0.2);
 .subtitle{margin:0;color:var(--muted)}
 
 
-/* Form */
 .task-form{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0}
 .task-form input[type="text"],
 .task-form input[type="number"]{
@@ -48,7 +45,6 @@ padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:0.95rem
 .btn-primary:hover{opacity:0.95}
 
 
-/* lista */
 .task-list {
   list-style: none;
   padding: 0;
