@@ -1,0 +1,59 @@
+:root{
+--bg-1: #0f172a; /* escuro */
+--card: #ffffff;
+--accent: #4f46e5; /* paleta do aluno: roxo-azulado */
+--accent-2: #06b6d4;
+--muted: #6b7280;
+}
+
+
+/* reset simples */
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+margin:0;
+font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+background: linear-gradient(135deg,var(--accent-2),var(--accent));
+color:#0f172a;
+-webkit-font-smoothing:antialiased;
+}
+
+
+.app-container{
+max-width:900px;
+margin:32px auto;
+background:var(--card);
+border-radius:12px;
+padding:20px;
+box-shadow:0 10px 30px rgba(2,6,23,0.2);
+}
+
+
+.app-header{display:flex;flex-direction:column;gap:6px}
+.app-header h1{margin:0;font-size:1.6rem}
+.subtitle{margin:0;color:var(--muted)}
+
+
+/* Form */
+.task-form{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:16px 0}
+.task-form input[type="text"],
+.task-form input[type="number"]{
+flex:1 1 220px;
+padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:0.95rem
+}
+
+
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:8px;border:none;cursor:pointer;background:var(--accent);color:white}
+.btn-primary:active{transform:translateY(1px)}
+.btn-primary:hover{opacity:0.95}
+
+
+/* lista */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;       
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
